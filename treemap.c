@@ -88,6 +88,8 @@ void * searchTreeMap(TreeMap * tree, void* key) {
   tree->current->right=aux;
   tree->current->left=aux;
 
+  return aux;
+
 
     
     
