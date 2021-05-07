@@ -85,7 +85,7 @@ void * searchTreeMap(TreeMap * tree, void* key) {
     return NULL;
 
 
-    return tree->current->key;
+    return key;
 }
 
 
