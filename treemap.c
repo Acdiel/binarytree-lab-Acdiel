@@ -81,16 +81,8 @@ void * searchTreeMap(TreeMap * tree, void* key) {
   if (key==aux->key){
     return aux->value;
   }else{
-    if(key > aux->key){
       aux=aux->right;
     }
-    if (key < aux->key){
-      aux=aux->left;
-    }
-  }
-  if (aux==NULL){
-    return NULL;
-  }
 
 
     return NULL;
