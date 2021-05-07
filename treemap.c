@@ -79,9 +79,9 @@ void * searchTreeMap(TreeMap * tree, void* key) {
 
   TreeNode * aux= tree->root;
   if (key==aux->key){
-    aux->key=tree->current;
-    return aux->value;
     
+    return aux->value;
+    aux->key=tree->current;
   }
 
 
