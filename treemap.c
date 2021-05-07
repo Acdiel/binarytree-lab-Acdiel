@@ -88,7 +88,7 @@ void * searchTreeMap(TreeMap * tree, void* key) {
   tree->current->right=aux;
   tree->current->left=aux;
 
-  if(tree->current > aux){
+  if(tree->current < aux){
     return NULL;
   }
 
