@@ -82,10 +82,11 @@ void * searchTreeMap(TreeMap * tree, void* key) {
 
   if (key==aux->key){
     return aux->value;
-    tree->current=aux;
-  tree->current->right=aux;
   }
-  
+
+  tree->current=aux;
+  tree->current->right=aux;
+  tree->current = tree->current->right;
  
   
     if(key==NULL)
