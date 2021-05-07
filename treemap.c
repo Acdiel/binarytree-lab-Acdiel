@@ -51,11 +51,10 @@ TreeMap * createTreeMap(int (*lower_than) (void* key1, void* key2)) {
 
 void insertTreeMap(TreeMap * tree, void* key, void * value) {
 
-  TreeNode * aux= tree->root;
-   tree->current=aux; 
-if (is_equal(tree,aux->key,key)== 1){
-      tree->current=aux;
-}
+  
+
+   tree->current=tree->root; 
+
     
     
 
