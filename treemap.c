@@ -80,9 +80,9 @@ void * searchTreeMap(TreeMap * tree, void* key) {
   TreeNode * aux= tree->root;
   if (key==aux->key){
     return aux->value;
-    tree->current=aux;
+    
   }
-  
+  tree->current=aux;
 
     if(key==NULL)
     return NULL;
