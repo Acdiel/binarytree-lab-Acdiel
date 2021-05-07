@@ -93,7 +93,7 @@ void * searchTreeMap(TreeMap * tree, void* key) {
   }
 
     
-    return aux->value;
+    return aux->key;
 }
 
 
