@@ -90,7 +90,7 @@ void * searchTreeMap(TreeMap * tree, void* key) {
 
   if(aux!=tree->current){
     return NULL;
-    
+    tree->current=aux;
   }
 
     
