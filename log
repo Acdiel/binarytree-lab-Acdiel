@@ -862,3 +862,9 @@ Sat May  8 01:24:33 UTC 2021:
  1 file changed, 2 insertions(+), 2 deletions(-)
  tests:  0|0
 95305f4
+Sat May  8 01:25:46 UTC 2021: 
+ treemap.c | 8 +++-----
+ 1 file changed, 3 insertions(+), 5 deletions(-)
+ tests:  10|6
+total_score: 15/70
+73f06f2
