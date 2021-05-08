@@ -78,8 +78,6 @@ tree->current=n;
 
 TreeNode * minimum(TreeNode * x){
 
-  
-  
 while (x->left!=NULL){
   x = x->left;
 }
@@ -144,7 +142,7 @@ void * nextTreeMap(TreeMap * tree) {
   TreeNode * aux= tree->root;
 
  if (aux->right != NULL) {
-
+   tree->current=aux;
         aux= aux->right;
         
  }
