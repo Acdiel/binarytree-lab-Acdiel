@@ -125,10 +125,17 @@ void * searchTreeMap(TreeMap * tree, void* key) {
 
 void * upperBound(TreeMap * tree, void* key) {
 
-  
+  TreeNode * aux= tree->root;
 
- 
-    
+  if (is_equal(tree,aux->key,key)== 1){
+      tree->current=aux;
+      return aux->value;
+    }if (tree->lower_than(key, aux->key) == 1){
+       aux = aux->left;
+    }else{
+        aux = aux->right;
+      }
+
     return key;
 }
 
