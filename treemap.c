@@ -58,7 +58,7 @@ void insertTreeMap(TreeMap * tree, void* key, void * value) {
          aux = aux->left;
          while (aux==NULL){
            aux->left = n; 
-           n->parent = aux;
+           
          }
 
        }
