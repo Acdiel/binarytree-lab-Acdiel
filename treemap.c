@@ -127,7 +127,7 @@ void * upperBound(TreeMap * tree, void* key) {
 
 TreeNode * aux= tree->root;
 
-   if (key==aux->key){
+   if (key==NULL){
     return aux->right;
   }
   
