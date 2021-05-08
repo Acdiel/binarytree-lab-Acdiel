@@ -130,6 +130,7 @@ TreeNode * aux= tree->root;
    if (key==aux->key){
     return aux->value;
   }
+  aux = aux->right;
   
     return key;
 }
