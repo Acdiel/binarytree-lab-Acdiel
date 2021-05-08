@@ -147,5 +147,5 @@ void * nextTreeMap(TreeMap * tree) {
         tree->current=aux;
  }
 
-    return aux->key;
+    return aux->right->key;
 }
