@@ -144,8 +144,9 @@ void * nextTreeMap(TreeMap * tree) {
  if (aux->right != NULL) {
    
         aux= aux->right;
-        tree->current=aux;
+        aux= tree->current;
+        
  }
 
-    return aux->right->key;
+    return tree->current->right->key;
 }
