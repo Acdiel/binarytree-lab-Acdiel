@@ -130,10 +130,17 @@ void * firstTreeMap(TreeMap * tree) {
 while (aux->left!=NULL){
   aux = aux->left;
 }
-   
     return aux->key;
 }
 
 void * nextTreeMap(TreeMap * tree) {
-    return NULL;
+
+  TreeNode * aux= tree->root;
+
+  while (aux->right!=NULL){
+  aux = aux->right;
+}
+
+
+    return aux->key;
 }
