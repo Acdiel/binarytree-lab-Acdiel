@@ -139,9 +139,9 @@ void * nextTreeMap(TreeMap * tree) {
 
   
 
-  tree->current=aux; // actualizar el current
+   // actualizar el current
   tree->current->right=aux;
 
-
+tree->current=aux;
     return tree->current->right->key;
 }
