@@ -56,7 +56,6 @@ void insertTreeMap(TreeMap * tree, void* key, void * value) {
 
 
 while(aux->left!=NULL || aux->right!=NULL){
-
   if (tree->lower_than(key, aux->key) == 1){
        aux = aux->left;
   }else{
@@ -110,11 +109,11 @@ void * searchTreeMap(TreeMap * tree, void* key) {
     if (tree->lower_than(key, aux->key) == 1){
        aux = aux->left;
     }else{
-      if(tree->lower_than(key, aux->key) == 0){
+      
         aux = aux->right;
       }
     }
-  }
+  
     
     return NULL;
 }
