@@ -78,7 +78,13 @@ tree->current=n;
 
 TreeNode * minimum(TreeNode * x){
 
-    return NULL;
+  
+  
+while (x->left!=NULL){
+  x = x->left;
+}
+
+    return x;
 }
 
 
