@@ -67,9 +67,11 @@ if(is_equal(tree, aux->key, key) == 0){
 if(tree->lower_than(key, aux->key) == 1 ){
 aux->left = n;
 n->parent = aux;
+tree->current=n;
 }else{
   aux->right = n;
   n->parent = aux;
+  tree->current=n;
 }
 }
 }
