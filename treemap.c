@@ -63,7 +63,7 @@ while(aux!=NULL){
       }
   }
 }
-if(tree->lower_than(key, n->key) == 1 ){
+if(tree->lower_than(key, aux->key) == 1 ){
 aux->left = n;
 n->parent = aux;
 }else{
