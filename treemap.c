@@ -139,10 +139,8 @@ void * nextTreeMap(TreeMap * tree) {
 
  if (aux->right != NULL) {
 
-        aux= aux->right;
-        while (aux->left != NULL) {
-            aux = aux->left;
-        }
+        aux= aux->right->right;
+        
  }
 
     return tree->current->right->key;
