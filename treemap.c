@@ -142,9 +142,9 @@ void * nextTreeMap(TreeMap * tree) {
   TreeNode * aux= tree->root;
 
  if (aux->right != NULL) {
-   tree->current=aux;
+   
         aux= aux->right;
-        
+        tree->current=aux;
  }
 
     return tree->current->right->key;
