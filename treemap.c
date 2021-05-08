@@ -132,7 +132,7 @@ void * upperBound(TreeMap * tree, void* key) {
       return aux->value;
     }
     
-    return NULL;
+    return aux;
 }
 
 void * firstTreeMap(TreeMap * tree) {
