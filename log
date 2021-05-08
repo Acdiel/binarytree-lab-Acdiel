@@ -1079,3 +1079,9 @@ Sat May  8 02:49:58 UTC 2021:
  tests:  13|5
 total_score: 25/70
 167d73a
+Sat May  8 02:55:02 UTC 2021: 
+ treemap.c | 9 ++++++++-
+ 1 file changed, 8 insertions(+), 1 deletion(-)
+ tests:  15|4
+total_score: 30/70
+af50f89
