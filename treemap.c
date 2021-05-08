@@ -137,11 +137,10 @@ void * nextTreeMap(TreeMap * tree) {
 
   TreeNode * aux= tree->root;
 
-  
+ while(aux->right!=NULL){
+   aux = aux->right;
+ }
 
-   // actualizar el current
-  tree->current->right=aux;
 
-tree->current=aux;
     return tree->current->right->key;
 }
