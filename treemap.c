@@ -127,8 +127,8 @@ void * firstTreeMap(TreeMap * tree) {
 
   TreeNode * aux= tree->root;
   
-while (aux->left!=NULL){
- tree->current->right=aux;
+if (aux->left!=NULL){
+  aux = aux->left;
 }
    
     return aux->key;
