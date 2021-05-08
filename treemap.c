@@ -130,8 +130,6 @@ void * upperBound(TreeMap * tree, void* key) {
   if (is_equal(tree,aux->key,key)== 1){
       tree->current=aux;
       return aux->value;
-    }else{
-      return aux->right;
     }
     
     return key;
